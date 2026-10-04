@@ -6,17 +6,23 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "test": "mocha src/**/*.test.js",
+    "test:api": "mocha src/test/external/FluxoEntregaTrabalho.external.test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "chai": "^6.2.2",
     "cors": "^2.8.5",
+    "dotenv": "^18.0.4",
     "express": "^4.19.2",
     "js-yaml": "^4.1.0",
     "jsonwebtoken": "^9.0.2",
+    "mocha": "^12.0.2",
     "morgan": "^1.10.0",
+    "supertest": "^7.3.0",
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
