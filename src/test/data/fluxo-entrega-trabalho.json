@@ -1,0 +1,30 @@
+[
+  {
+    "descricao": "entrega um trabalho de Matemática",
+    "aluno": {
+      "nome": "Aluno de Teste API",
+      "email": "aluno-{runId}@example.com",
+      "matricula": "{runId}",
+      "senha": "Aluno@123"
+    },
+    "trabalho": {
+      "disciplinaId": "disciplina-matematica",
+      "titulo": "Lista de exercícios automatizada {runId}",
+      "descricao": "Entrega criada pelo teste automatizado."
+    }
+  },
+  {
+    "descricao": "entrega um trabalho de História",
+    "aluno": {
+      "nome": "Outro Aluno de Teste API",
+      "email": "outro-aluno-{runId}@example.com",
+      "matricula": "{runId}",
+      "senha": "Aluno@456"
+    },
+    "trabalho": {
+      "disciplinaId": "disciplina-historia",
+      "titulo": "Pesquisa histórica automatizada {runId}",
+      "descricao": "Entrega criada pelo teste automatizado."
+    }
+  }
+]

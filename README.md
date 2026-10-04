@@ -93,6 +93,21 @@ npm run dev
 O servidor sobe por padrão em `http://localhost:3000` (pode ser alterado com a variável de
 ambiente `PORT`).
 
+### Testes automatizados da API
+
+Os testes de fluxo usam Mocha, SuperTest e Chai. Para configurar as variáveis de ambiente locais,
+copie `.env.example` para `.env` e ajuste os valores se necessário. O usuário administrador de
+teste deve existir no seed da aplicação.
+
+```bash
+npm run test:api
+```
+
+O fluxo de cadastro, matrícula, login do aluno e entrega é dirigido pelos cenários em
+[`src/test/data/fluxo-entrega-trabalho.json`](src/test/data/fluxo-entrega-trabalho.json). A suíte
+completa (`npm test`) é executada no GitHub Actions em cada push e pull request, sem exigir um
+servidor iniciado à parte.
+
 ## Documentação da API (Swagger)
 
 A documentação completa de todas as rotas, parâmetros, corpos de requisição e respostas está
